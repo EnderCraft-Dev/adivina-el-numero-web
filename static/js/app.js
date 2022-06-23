@@ -11,7 +11,6 @@ function checker(usernum, randomnum)
 function randomNumber()
 {
     let random = Math.floor(Math.random() * 11);
-    console.log(random)
     return random;
 }
 let random = randomNumber();

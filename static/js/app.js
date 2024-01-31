@@ -23,7 +23,7 @@ function getUserNumber()
         if(number.length > 0)
         {
             let numberInt = parseInt(number);
-        if(typeof(numberInt) === 'number')
+        if(!isNaN(numberInt))
         {
             let fails = 0;
             let life = 1;
@@ -40,7 +40,7 @@ function getUserNumber()
             life -=1;
             if(life == 0 && fails == 1)
             {
-                alert("Perdiste :(");
+                alert(`Perdiste :(\nEstaba pensando en el número ${random}`);
                 location.reload();
             }
           }
